@@ -1,0 +1,33 @@
+.img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  border: 1px solid rgb(228, 228, 231);
+}
+
+.button {
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 8px;
+  gap: 8px;
+  width: 200px;
+  align-self: end;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  text-align: center;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}

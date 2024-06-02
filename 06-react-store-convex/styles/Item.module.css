@@ -1,0 +1,70 @@
+.item {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.itemImage {
+  width: 150px;
+  object-fit: cover;
+}
+
+.itemText {
+  margin-left: 10px;
+}
+
+.itemName {
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.itemDesc {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.itemPrice {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.buttonAndRemaining {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* on small screen make teh buttonAndRemaining direction colum */
+@media (min-width: 1000px) {
+  .buttonAndRemaining {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+.itemButton {
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 0.5rem;
+  text-align: left;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  text-align: center;
+  width: 120px;
+}
+
+.itemButton:hover,
+.itemButton:focus,
+.itemButton:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
